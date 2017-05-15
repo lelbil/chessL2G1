@@ -1,0 +1,168 @@
+2017-04-24T21:51:38.767+0200 I CONTROL  [initandlisten] MongoDB starting : pid=3802 port=29123 dbpath=./database 64-bit host=billel-Latitude-E4310
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten] db version v3.4.4
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten] modules: none
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten] build environment:
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-04-24T21:51:38.802+0200 I CONTROL  [initandlisten] options: { net: { port: 29123 }, storage: { dbPath: "./database" }, systemLog: { destination: "file", logAppend: true, path: "log", quiet: true } }
+2017-04-24T21:51:38.822+0200 I STORAGE  [initandlisten] 
+2017-04-24T21:51:38.822+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-04-24T21:51:38.822+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-04-24T21:51:38.822+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=450M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-24T21:51:41.642+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:51:42.005+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './database/diagnostic.data'
+2017-04-24T21:51:42.381+0200 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-04-24T21:51:42.381+0200 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-04-24T21:51:42.383+0200 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-04-24T21:51:42.384+0200 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-04-24T21:51:42.384+0200 I NETWORK  [thread1] waiting for connections on port 29123
+2017-04-24T21:51:42.887+0200 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2017-04-24T21:51:42.887+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-04-24T21:51:42.887+0200 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-04-24T21:51:42.887+0200 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-04-24T21:51:42.887+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-29123.sock
+2017-04-24T21:51:42.887+0200 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-04-24T21:51:42.887+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-04-24T21:51:42.887+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-04-24T21:51:43.608+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-04-24T21:51:43.609+0200 I CONTROL  [signalProcessingThread] now exiting
+2017-04-24T21:51:43.609+0200 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-04-24T21:51:43.609+0200 I CONTROL  [initandlisten] shutting down with code:0
+2017-04-24T21:52:18.922+0200 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] MongoDB starting : pid=3886 port=29123 dbpath=./database 64-bit host=billel-Latitude-E4310
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] db version v3.4.4
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] modules: none
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] build environment:
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-04-24T21:52:18.926+0200 I CONTROL  [initandlisten] options: { net: { port: 29123 }, security: { authorization: "enabled" }, storage: { dbPath: "./database", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "log", quiet: true } }
+2017-04-24T21:52:18.946+0200 I -        [initandlisten] Detected data files in ./database created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-04-24T21:52:18.946+0200 I STORAGE  [initandlisten] 
+2017-04-24T21:52:18.947+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-04-24T21:52:18.947+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-04-24T21:52:18.947+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=450M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-04-24T21:52:20.333+0200 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-04-24T21:52:20.333+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:52:20.333+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2017-04-24T21:52:20.333+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-24T21:52:20.333+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:52:20.333+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2017-04-24T21:52:20.333+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-24T21:52:20.333+0200 I CONTROL  [initandlisten] 
+2017-04-24T21:52:20.336+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './database/diagnostic.data'
+2017-04-24T21:52:20.336+0200 I NETWORK  [thread1] waiting for connections on port 29123
+2017-04-24T21:53:13.277+0200 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2017-04-24T21:53:13.370+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:40678 conn1: { driver: { name: "nodejs", version: "2.2.26" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-66-generic" }, platform: "Node.js v6.5.0, LE, mongodb-core: 2.1.10" }
+2017-04-25T00:17:52.056+0200 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2017-04-25T00:17:58.300+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-04-25T00:17:58.862+0200 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-04-25T00:17:58.862+0200 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-04-25T00:17:59.146+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-29123.sock
+2017-04-25T00:17:59.301+0200 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-04-25T00:17:59.809+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-04-25T00:18:00.488+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-04-25T00:18:05.585+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-04-25T00:18:05.595+0200 I CONTROL  [signalProcessingThread] now exiting
+2017-04-25T00:18:05.595+0200 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-04-25T00:18:05.595+0200 I CONTROL  [initandlisten] shutting down with code:0
+2017-05-05T14:16:21.957+0200 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] MongoDB starting : pid=2466 port=29123 dbpath=./database 64-bit host=billel-Latitude-E4310
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] db version v3.4.4
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] modules: none
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] build environment:
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-05-05T14:16:21.971+0200 I CONTROL  [initandlisten] options: { net: { port: 29123 }, security: { authorization: "enabled" }, storage: { dbPath: "./database", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "log", quiet: true } }
+2017-05-05T14:16:22.003+0200 I -        [initandlisten] Detected data files in ./database created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-05-05T14:16:22.003+0200 I STORAGE  [initandlisten] 
+2017-05-05T14:16:22.003+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-05-05T14:16:22.003+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-05-05T14:16:22.003+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=450M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-05-05T14:16:24.162+0200 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-05-05T14:16:24.162+0200 I CONTROL  [initandlisten] 
+2017-05-05T14:16:24.162+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2017-05-05T14:16:24.162+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-05-05T14:16:24.162+0200 I CONTROL  [initandlisten] 
+2017-05-05T14:16:24.162+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2017-05-05T14:16:24.162+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-05-05T14:16:24.162+0200 I CONTROL  [initandlisten] 
+2017-05-05T14:16:24.185+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './database/diagnostic.data'
+2017-05-05T14:16:24.186+0200 I NETWORK  [thread1] waiting for connections on port 29123
+2017-05-05T14:16:32.347+0200 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2017-05-05T14:16:32.347+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:59050 conn1: { driver: { name: "nodejs", version: "2.2.26" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-66-generic" }, platform: "Node.js v6.10.2, LE, mongodb-core: 2.1.10" }
+2017-05-05T14:16:32.363+0200 I ACCESS   [conn1] SCRAM-SHA-1 authentication failed for manager on chess from client 127.0.0.1:59050 ; UserNotFound: Could not find user manager@chess
+2017-05-05T14:16:55.929+0200 I NETWORK  [conn2] received client metadata from 127.0.0.1:59052 conn2: { driver: { name: "nodejs", version: "2.2.26" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-66-generic" }, platform: "Node.js v6.10.2, LE, mongodb-core: 2.1.10" }
+2017-05-05T14:16:55.944+0200 I ACCESS   [conn2] SCRAM-SHA-1 authentication failed for manager on chess from client 127.0.0.1:59052 ; UserNotFound: Could not find user manager@chess
+2017-05-05T14:17:15.691+0200 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] MongoDB starting : pid=2634 port=29123 dbpath=./database 64-bit host=billel-Latitude-E4310
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] db version v3.4.4
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] modules: none
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] build environment:
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-05-05T14:17:15.695+0200 I CONTROL  [initandlisten] options: { net: { port: 29123 }, security: { authorization: "enabled" }, storage: { dbPath: "./database", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "log", quiet: true } }
+2017-05-05T14:17:15.736+0200 I STORAGE  [initandlisten] exception in initAndListen: 98 Unable to lock file: ./database/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating
+2017-05-05T14:17:15.736+0200 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-05-05T14:17:15.736+0200 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-05-05T14:17:15.736+0200 I CONTROL  [initandlisten] now exiting
+2017-05-05T14:17:15.736+0200 I CONTROL  [initandlisten] shutting down with code:100
+2017-05-05T14:17:20.053+0200 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-05-05T14:17:20.057+0200 I CONTROL  [initandlisten] MongoDB starting : pid=2638 port=29123 dbpath=./database 64-bit host=billel-Latitude-E4310
+2017-05-05T14:17:20.187+0200 I CONTROL  [initandlisten] db version v3.4.4
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] modules: none
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] build environment:
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] options: { net: { port: 29123 }, security: { authorization: "enabled" }, storage: { dbPath: "./database", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "log", quiet: true } }
+2017-05-05T14:17:20.188+0200 I STORAGE  [initandlisten] exception in initAndListen: 98 Unable to lock file: ./database/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating
+2017-05-05T14:17:20.188+0200 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-05-05T14:17:20.188+0200 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] now exiting
+2017-05-05T14:17:20.188+0200 I CONTROL  [initandlisten] shutting down with code:100
+2017-05-05T14:17:36.813+0200 I NETWORK  [conn3] received client metadata from 127.0.0.1:59054 conn3: { driver: { name: "nodejs", version: "2.2.26" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-66-generic" }, platform: "Node.js v6.10.2, LE, mongodb-core: 2.1.10" }
+2017-05-05T14:17:36.828+0200 I ACCESS   [conn3] SCRAM-SHA-1 authentication failed for manager on chess from client 127.0.0.1:59054 ; UserNotFound: Could not find user manager@chess
+2017-05-05T14:46:47.442+0200 I NETWORK  [conn4] received client metadata from 127.0.0.1:33204 conn4: { driver: { name: "nodejs", version: "2.2.26" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-66-generic" }, platform: "Node.js v6.10.2, LE, mongodb-core: 2.1.10" }
+2017-05-05T14:46:47.521+0200 I ACCESS   [conn4] SCRAM-SHA-1 authentication failed for manager on chess from client 127.0.0.1:33204 ; UserNotFound: Could not find user manager@chess
+2017-05-05T14:47:33.279+0200 I NETWORK  [conn5] received client metadata from 127.0.0.1:33246 conn5: { driver: { name: "nodejs", version: "2.2.26" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-66-generic" }, platform: "Node.js v6.5.0, LE, mongodb-core: 2.1.10" }
+2017-05-05T14:47:37.838+0200 I ACCESS   [conn5] SCRAM-SHA-1 authentication failed for manager on chess from client 127.0.0.1:33246 ; UserNotFound: Could not find user manager@chess
+2017-05-05T16:01:00.028+0200 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2017-05-05T16:01:04.750+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-05-05T16:01:04.989+0200 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-05-05T16:01:04.989+0200 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-05-05T16:01:05.051+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-29123.sock
+2017-05-05T16:01:05.134+0200 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-05-05T16:01:06.269+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-05-05T16:01:06.970+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-05-05T16:01:11.291+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-05-05T16:01:11.343+0200 I CONTROL  [signalProcessingThread] now exiting
+2017-05-05T16:01:11.343+0200 I CONTROL  [signalProcessingThread] shutting down with code:0

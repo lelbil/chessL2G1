@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <div class="row">
+    <div class = "col-xs-2">
+      <img id="profilePic" class="img-resposive img-circle" src="DiDi.jpg" alt="profilePic"> <!-- Zone Logo -->
+    </div>
+    <div class = "col-xs-10">
+      <nav class="navbar navbar-default" id="tete">
+        <div class="container-fluid">
+          <!-- Menu déroulant -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-knight">Jouer</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="local">Partie locale</a></li>
+              <li><a href="local">Jouer contre l'IA</a></li>
+              <li><a href="p">Partie privée</a></li>
+              <li><a href="p">Partie rapide</a></li>
+            </ul>
+          </div>
+          <!-- Boutons : Inscription et Connexion -->
+          <ul class="nav navbar-nav navbar-right" id = "logButton">
+            <li><a href="/inscription"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
+            <li><a href="/connexion"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+          </ul>
+          <!-- Bouton : Option -->
+          <button class="btn btn-lg btn-primary navbar-btn" id="option">Options <span class="glyphicon glyphicon-cog"></span></button>
+          <div class="panel panel-primary" id="pannel">
+            <!-- Pannel d'informations des joueurs -->
+            <div class="panel-heading" ><strong>Informations du joueur :</strong></div>
+            <div class="panel-body" id="pannel1" ><em>Pseudo :</em></div>
+            <div class="panel-body" id="pannel2" ><em>Niveau :</em></div>
+          </div>
+        </div>
+      </nav>
+      <hr>
+    </div>
+  </div>
+
+<script>
+$(document).ready(function(){
+    $(".dropdown-toggle").dropdown();
+});
+</script>
+
+</head>
+  <form action="" method="post" name="form" class="formulaire">
+    <input type="text" name="recherche" id="recherche">
+    <button id="sub">rechercher</button>
+  </form>
+    <form action="" method="post" name="form" class="formulaire2">
+    <input type="text" name="recherche" id="recherche">
+    <button id="sub">review</button>
+  </form>
+  <div class="center">
+    <table id = "stats">
+      <tr>
+        <td colspan = "6" class = "centertitle">
+          Statistiques
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Victoire
+        </td>
+        <td id = "victory">
+          0
+        </td>
+        <td>
+          Defaite
+        </td>
+        <td id = "loose">
+          0
+        </td>
+        <td>
+          Nul
+        </td>
+        <td id = "equality">
+          0
+        </td>
+      </tr>
+      <tr>
+
+      </tr>
+    </table>
+  </div>
+
+  <div class="center">
+    <table id = "history">
+      <tr>
+        <td colspan = "5" class = "centertitle">Historique</td>
+      </tr>
+      <tr>
+        <td>
+          Partie
+        </td>
+        <td>
+          Versus
+        </td>
+        <td>
+          Temps
+        </td>
+        <td>
+          Coups
+        </td>
+        <td>
+          Resultat
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+<html>

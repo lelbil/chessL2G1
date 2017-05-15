@@ -1,0 +1,263 @@
+#tete {
+	padding-top: 10px;
+	width: 100%;
+	z-index : 10;
+}
+
+#echiquier {
+	td {
+		text-align: center;
+		width: 64px;
+		height: 64px;
+		font-weight: bold;
+		border-style: solid;
+		border-width: 0px;
+		border-spacing: 0px;
+		margin :0px;
+		padding :0px;
+
+	}
+	#border {
+		border-style:solid;
+		border-width: 2px;
+	}
+  border-spacing: 0;
+  margin-top: 80px;
+  margin-left: 180px;
+	th {
+    width: 64px;
+    height: 64px;
+    border-style: solid;
+		text-align: center;
+		&:first-child, &:last-child
+		{
+			border-style : none;
+		}
+	}
+	thead th
+	{
+		border-width: 0px 0px 1px 0px;
+	}
+	tfoot th
+	{
+		border-width: 1px 0px 0px 0px;
+	}
+}
+
+.history {
+  	display:inline-block;
+}
+
+#blockhistory{
+	background-color: white;
+	border-radius: 0px;
+	border: 0px;
+}
+
+.panel-body{
+	margin-top: 4px;
+	border: 1px solid #8e5736;
+	margin-left: 24px;
+	width: 550px;
+
+}
+
+.panel-info {
+	border:0;
+}
+
+.panel-info>.panel-heading {
+	background-color: white;
+}
+
+.panel-title {
+	background-color: white;
+	font-size: 30px;
+		  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#8e5736));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#popups
+{
+	position:fixed;
+	z-index: 101;
+	width: 100%;
+	height: 25%;
+	overflow: hidden;
+	pointer-events: none;
+	.popup
+	{
+		//display: table;
+		position: relative;
+		min-height: 50px;
+		width: 400px;
+		margin-left : auto;
+		margin-right: auto;
+		margin-top: 10px;
+		//transform: translate(-50%,0);
+		animation-name: fadeinout;
+		animation-timing-function:linear;
+		border-radius: 30px;
+		box-shadow: 0px 0px 3px white;
+		box-shadow: inset 0px 0px 3px white;
+		div
+		{
+			//margin-left: auto;
+		  //margin-right: auto;
+			text-align: center;
+		  position: absolute;
+		  top: 50%;
+			left: 50%;
+		  transform: translate(-50%, -50%);
+			font-size: 13pt;
+			font-weight: bold;
+			//text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 0.5px 0.5px #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff;
+		}
+	}
+}
+@keyframes fadeinout {
+    0% {opacity: 0;};
+		2% {opacity: 0.95};
+		80% {opacity: 0.95};
+		100% {opacity: 0};
+}
+
+@keyframes fadein {
+	0% {opacity: 0};
+	100% {opacity: 1};
+}
+
+#lazone {
+  height: 200px;
+  border: #8e5736 1px solid;
+  background-color: #b0eae7;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+#tab {
+  height: 90%;
+}
+
+fieldset {
+  margin-left: 10px;
+  background-color: white;
+}
+
+section#chat div {
+  margin-left: 7px;
+  background: white;
+  padding: 3px;
+  bottom: 0;
+  width: 100%;
+  height: 70px; }
+
+section#chat div input {
+  margin-bottom: 2px;
+  padding: 5px 10px;
+  width: 90%;
+  height: 50%;
+  margin-right: .5%;
+  font-size: 15px;
+  border: solid 1px #8e5736; }
+
+section#chat div input#username {
+  width: 70%; }
+
+section#chat div span {
+  width: 20%;
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  text-align: center; }
+
+section#chat div button {
+  margin-top: 1px;
+  width: 9%;
+  height: 100%;
+  background-color: #8e5736;
+  float: right;
+  border: none;
+  margin-right: 0.5%;
+  font-size: 17px;
+  color: white;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+section#chat #messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px; }
+
+section#chat #messages li {
+  padding: 5px 10px; }
+
+section#chat #messages li:nth-child(odd) {
+  background: #e49341; }
+
+#boxes .panel-body {
+  height: 350px;
+  overflow-y: scroll; }
+
+.row {
+	height: 100%;
+	width: 100%;
+  	margin-left: 0px; }
+
+
+.chatTitle{
+	font-size: 30px;
+	  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#8e5736));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newgame, #difficultyselect, #newai, #colorselect, #quit, #theme, #btSave, #mask, #buttonRemoteSave, #buttonLocalSave, #btnQueen, #btnRook, #btnBishop, #btnKnight {
+	background-color: #8e5736;
+	border: 1px solid #8e5736;
+	color : white;
+}
+
+.newgame:hover, section#chat div button:hover, #quit:hover, #theme:hover, #btSave:hover, #mask:hover, #buttonRemoteSave:hover, #buttonLocalSave:hover, #newai:hover, #difficultyselect:hover, #colorselect:hover, #btnQueen:hover, #btnRook:hover, #btnBishop:hover, #btnKnight:hover{
+	box-shadow: inset 0px 0px 10px 2px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow: inset 0px 0px 10px 2px rgba(255, 255, 255, 0.75);
+	-webkit-box-shadow: inset 0px 0px 10px 2px rgba(255, 255, 255, 0.75);
+}
+#mask {
+	margin-bottom: 4px;
+}
+#buttonRemoteSave, #buttonLocalSave {
+	margin-bottom: 2px;
+	width: 100%;
+}
+
+.newgame, #newai  {
+	margin-left: 4px;
+	margin-top: 4px;
+	height: 45px;
+	width: 130px;
+	border-radius: 10px;
+	font-family: Arial;
+}
+
+#difficultyselect, #colorselect {
+	margin-left: 4px;
+	margin-top: 4px;
+	height: 30px;
+	width: 130px;
+	border-radius: 10px;
+	font-family: Arial;
+}
+
+.coloria {
+	margin-left: 100px;
+}
+
+#btnQueen {
+	margin-left: 360px;
+}

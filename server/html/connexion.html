@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Connexion</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<h2 class="page-header">Connexion</h2>
+		<p class = 'form-group'>Entrez votre nom d'utilisateur et mot de passe s'il vous plaît</p>
+		<form method='post' action='/connexion'>
+			<div class='form-group'>
+				<label>Nom d'utilisateur</label>
+				<input class="form-control" type="text" name="username" placeholder="Entrez votre nom d'utilisateur..">
+			</div>
+			<div class='form-group'>
+				<label>Mot de Passe</label>
+				<input class="form-control" type="password" name="password" placeholder="Entrez un mot de passe..">
+			</div>
+
+			<input class="btn btn-primary" type="submit" name="submit" value="Connexion" id = "connect">
+		</form>
+	</body>
+</html>

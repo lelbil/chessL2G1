@@ -1,0 +1,104 @@
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+		script(src='js/jquery.min.js', defer)
+		script(src='js/bootstrap.min.js', defer)
+		script(src='js/utilities.js', defer)
+		script(src='js/interaction.js', defer)
+		title Echecs.io
+	body
+		#modaldiv
+			#modaldivcontent
+				table
+					tr
+						td
+							input(type='text')#inputid
+						td
+							button#rejoindre Rejoindre une partie
+					tr
+						td
+						td
+					tr
+						td
+						td
+					tr
+						td
+						td
+					tr
+						td
+							select#selectSave
+						td
+							button#loadSave Charger
+					tr
+						td
+							input(type='text', readonly='', disabled)#linkoutput
+						td
+							button#goLink Jouer
+		#popups
+		.row
+			.col-xs-2
+				img#profilePic.img-responsive(src=(user? '/uploads/' + user.profileimage : '/img/logo.png'), alt='profilePic')
+			.col-xs-10
+				nav#tete.navbar.navbar-default
+					.container-fluid
+						.btn-group
+							button.btn.btn-primary.btn-lg.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								span.glyphicon.glyphicon-knight &nbsp;Jouer
+								span.caret
+							ul.dropdown-menu
+								li
+									a(href='/local')#localLinkButton Partie locale
+								li
+									a(href='/local/IA')#aiButtonDrop Jouer contre l&apos;IA
+								li
+									a(href='#')#joinButtonDrop Cr&eacute;er / Rejoindre une partie
+								li
+									a(href='#')#fastButtonDrop Partie rapide
+						ul.nav.navbar-nav.navbar-right
+							if !user
+								li
+									a(href='/inscription')
+										span.glyphicon.glyphicon-user
+										|  Inscription
+								li
+									a(href='/connexion')
+										span.glyphicon.glyphicon-log-in
+										|  Connexion
+							if user
+								li
+									a(href='/deconnexion')
+										span.glyphicon.glyphicon-log-out
+										|  Déconnexion
+						|
+						if user
+							#pannel.panel.panel-primary
+								.panel-heading
+									strong Informations du joueur :
+								#pannel1.panel-body
+									em Pseudo :
+										strong= user.pseudo
+								#pannel2.panel-body
+									em Niveau :
+				hr
+		.row
+			.col-xs-12.col-md-6
+				form.formulaire(action='', method='post', name='form')
+					input#recherche(type='text', name='recherche')
+					|
+					button#sub rechercher
+				.center
+					.centertitle
+						strong Statistiques
+					p Soon™
+			.col-xs-12.col-md-6
+				form.formulaire2(action='', method='post', name='form')
+					input#recherche(type='text', name='recherche')
+					|
+					button#sub review
+				.center
+					.centertitle
+						strong Historique
+					p Soon™

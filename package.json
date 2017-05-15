@@ -1,0 +1,47 @@
+{
+  "name": "echecs.io",
+  "version": "1.0.0",
+  "description": "Jeu d'echec en ligne",
+  "repository": {
+    "type": "svn",
+    "url": "https://projets3.ens.math-info.univ-paris5.fr/svn/2016-l2g1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "autoscss": "node-sass --source-map-contents dev/scss --output public/css -wr",
+    "build-css": "node-sass --source-map-contents dev/scss --output public/css",
+    "watch-code": "devtool server.js --watch server.js --watch server/html/* --watch server/js/*",
+    "dev": "concurrently \"npm run build-css & npm run autoscss\" \"npm run watch-code\" ",
+    "start": "node server.js"
+  },
+  "author": "ATTOUCHI Billel, BAYOUDH Gihad, BRASSEUR Dylan, MEYNADIER Jérémy",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "devtool": "^2.3.1",
+    "documentation": "^4.0.0-beta.18",
+    "eslint": "^3.15.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-messages": "*",
+    "express-session": "^1.15.1",
+    "express-validator": "*",
+    "mongodb": "^2.2.22",
+    "mongoose": "^4.8.1",
+    "multer": "*",
+		"node-sass": "^4.5.0",
+    "passport": "^0.3.2",
+    "passport-http": "*",
+    "passport-local": "*",
+    "passport.socketio": "^3.7.0",
+    "pug": "^2.0.0-beta11",
+    "q": "^1.5.0",
+    "socket.io": "^1.7.2"
+  }
+}

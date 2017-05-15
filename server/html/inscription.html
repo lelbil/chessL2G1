@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inscription</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<h2 class="page-header">Inscription</h2>
+		<p class = 'form-group'>Remplissez le formulaire ci-dessous s'il vous plait</p>
+		<!--faudra afficher les erreurs le cas échéant-->
+		<!--<ul class="errors">
+		<li class="alert alert-danger"></li>
+	</ul>-->
+		<form method='post' action='/inscription' enctype='multipart/form-data'>
+			<div class='form-group'>
+				<label>Nom</label>
+				<input class="form-control" type="text" name="name" placeholder="Entrez votre nom..">
+			</div>
+			<div class='form-group'>
+				<label>Email</label>
+				<input class="form-control" type="email" name="email" placeholder="Entrez votre Email..">
+			</div>
+			<div class='form-group'>
+				<label>Nom d'utilisateur</label>
+				<input class="form-control" type="text" name="username" placeholder="Entrez votre nom d'utilisateur souhaité..">
+			</div>
+			<div class='form-group'>
+				<label>Mot de Passe</label>
+				<input class="form-control" type="password" name="password" placeholder="Entrez un mot de passe..">
+			</div>
+			<div class='form-group'>
+				<label>Confirmez votre mot de passe</label>
+				<input class="form-control" type="password" name="password2" placeholder="retapez votre mot de passe..">
+			</div>
+			<div class='form-group'>
+				<label>Photo de Profil</label>
+				<input class="form-control" type="file" name="profileimage">
+			</div>
+			<input class="btn btn-primary" type="submit" name="submit" value="S'inscrire" id = "inscrit">
+		</form>
+	</body>
+</html>
