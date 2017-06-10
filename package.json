@@ -12,7 +12,7 @@
     "build-css": "node-sass --source-map-contents dev/scss --output public/css",
     "watch-code": "devtool server.js --watch server.js --watch server/html/* --watch server/js/*",
     "dev": "concurrently \"npm run build-css & npm run autoscss\" \"npm run watch-code\" ",
-    "start": "node server.js"
+    "start": "npm run dev"
   },
   "author": "ATTOUCHI Billel, BAYOUDH Gihad, BRASSEUR Dylan, MEYNADIER Jérémy",
   "license": "ISC",
